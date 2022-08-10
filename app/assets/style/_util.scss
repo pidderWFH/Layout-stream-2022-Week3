@@ -1,0 +1,30 @@
+.d-flex{
+    display: flex;
+}
+.sm-mb-1{
+    @include mobile{
+        margin-bottom: 8px;
+    }
+}
+.sm-pt-2{
+    @include mobile{
+        padding-top: 16px;
+    }
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.mr-4{
+    margin-right: 32px;
+}
+.md-mr-2{
+    @include pad{
+        margin-right: 16px;
+    }
+}
+.mr-6{
+    margin-right: 48px;
+}
+.mr-8{
+    margin-right: 64px;
+}
