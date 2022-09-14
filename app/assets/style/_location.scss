@@ -1,0 +1,32 @@
+.location{
+    
+    .select{
+        border: 1px solid #CED4DA;
+        margin-left: 16px;
+        width: 304px;
+        height: 38px;
+        padding: 6px 12px;
+    }
+    img{
+        width: 416px;
+    }
+    .card-list{
+        margin: 40px -12px 80px -12px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .card{
+        padding: 0 12px;
+        
+        &-footer{
+            padding: 16px 17px;
+            background: #000000;
+            border: 1px solid #00000020;
+            text-align: center;
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+}

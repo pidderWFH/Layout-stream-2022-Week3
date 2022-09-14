@@ -1,0 +1,51 @@
+.underline{
+    position: relative;
+    &.underline-start{
+        position: absolute;
+    }
+}
+.location_info{
+    margin-bottom: 80px;
+    img{
+        // width: 526px;
+        // height: 224px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .select{
+        border: 1px solid #CED4DA;
+        margin-left: 16px;
+        width: 304px;
+        height: 38px;
+        padding: 6px 12px;
+    }
+    
+    // .map{
+    //     position: relative;
+    //     width: 100%;
+    //     height: 0;
+    //     padding-bottom: 10%;
+    //     .iframe{
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+        
+    // }
+}
+.card{
+    &-title{
+        padding: 8px 24px;
+        border: 1px solid #00000020;
+    }
+    &-body{
+        padding: 16px 24px;
+        border: 1px solid #00000020;
+        p{
+            color: black;
+        }
+    }
+}

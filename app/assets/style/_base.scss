@@ -1,4 +1,5 @@
 *, *::before, *::after{
+    font-family: "Noto Sans TC", sans-serif;
     box-sizing: border-box;
     line-height: 1.5;
     @include mobile{
@@ -13,15 +14,21 @@ img{
 .bg-primary{
     background: $primary-color;
 }
+.underline{
+        
+    border-left: 8px solid #9F1213;
+}
 .container{
-    max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
+    @include laptop{
+        max-width: 1320px;
+        
+    }
     @include pad{
         max-width:720px; 
     }
     @include mobile{
-        max-width: 372px;
-        padding: 0;
+        max-width: 100%;
     }
 }
