@@ -1,19 +1,19 @@
-$primary-color:#AA0601;
-$accent-color:#000000;
+$primary:#AA0601;
+$secondary:#000000;
 $white: #FFFFFF;
 @mixin laptop{
-  @media(max-width:1600px){
+  @media(max-width:1920px){
     @content;
   }
 }
 @mixin pad{
-    @media(max-width: 768px){
+    @media(max-width: 992px){
       @content;
     }
   }
   
 @mixin mobile{
-  @media(max-width: 475px){
+  @media(max-width: 767px){
     @content;
   }
 }
