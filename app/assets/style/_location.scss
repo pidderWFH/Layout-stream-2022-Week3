@@ -1,32 +1,115 @@
 .location{
-    
-    .select{
-        border: 1px solid #CED4DA;
-        margin-left: 16px;
-        width: 304px;
-        height: 38px;
-        padding: 6px 12px;
+    margin-top: 96px;
+    margin-bottom: 80px;
+    @include pad{
+        margin: 80px 0;
     }
-    img{
-        width: 416px;
+    @include mobile{
+        margin-top: 40px;
+        margin-bottom: 64px;
     }
-    .card-list{
-        margin: 40px -12px 80px -12px;
-        display: flex;
-        flex-wrap: wrap;
-
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        @include mobile{
+            font-size: 24px;
+        }
     }
-    .card{
-        padding: 0 12px;
-        
-        &-footer{
-            padding: 16px 17px;
-            background: #000000;
-            border: 1px solid #00000020;
-            text-align: center;
-            a{
-                color: #FFFFFF;
+    .select-area{
+        margin-top: 32px;
+        span{
+            font-size: 24px;
+        }
+        @include pad{
+            span{
+                font-size: 24px;
             }
         }
+        @include mobile{
+            span{
+
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .select{
+        width: 304px;
+        height: 38px;
+        font-size: 18px;
+        padding: 6px 12px;
+        margin-bottom: 40px;
+        @include mobile{
+            width: 276px;
+            margin-bottom: 24px;
+        }
+    }
+    .card-list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        align-items: center;
+        @include pad{
+            justify-content: space-between;
+        }
+        
+    }
+    .card{
+        width: 33.3%; 
+        margin-bottom: 48px;
+        @include pad{
+            width: 50%;
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            width: 100%;
+
+        } 
+        img{
+            width: 416px;
+            @include pad{
+                width: 337px;
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .card-body{
+            width: 416px;
+            @include pad{
+                width: 337px;
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .card-title{
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+        }
+        .card-content{
+            padding: 16px 24px;
+            border: 1px solid #00000020;
+        } 
+        .material-icons-outlined{
+            color: black;          
+        }
+        .card-footer{
+            background: #000000;
+            padding: 16px 17px;
+            text-align: center;
+            a{
+                color:$white;
+                font-size: 20px;
+            }
+        }
+
     }
 }
